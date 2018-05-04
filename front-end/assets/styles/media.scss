@@ -1,0 +1,81 @@
+@import "sprites";
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1199px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 960px) {
+  .hidden-sm {
+    display: none !important;
+  }
+  .wrapper {
+    padding: 0 5px;
+  }
+  .header__top-menu_cover {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 18px 10px 10px 5px;
+  }
+  .header_logo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .header_logo {
+    @include sprite($logo);
+    display: inline-block;
+  }
+  .header__main-menu_cover {
+    @include sprite($menu);
+    display: inline-block;
+
+  }
+  .shopping-cart_cover {
+    display: inline-block;
+    @include sprite($bag);
+  }
+  .header__main-menu {
+    display: none;
+  }
+  .header__top-menu {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  #search {
+    div.icon-search {
+      @include sprite($search);
+      position: absolute;
+      right: 9px;
+      top: 8px;
+      color: #bdbdbd;
+    }
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 510px) {
+
+}
+
+@media only screen and (max-width: 385px) {
+
+}
+
+@media only screen and (max-width: 350px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+
+}
+
